@@ -155,7 +155,7 @@ module.exports = {
         break;
       case 'external_service_new':
         I.fillField(this.fields.serviceName, serviceName);
-        I.fillField(this.fields.hostName, process.env.SERVER_IP);
+        I.fillField(this.fields.hostName, process.env.VM_IP);
         I.fillField(this.fields.metricsPath, '/metrics');
         I.fillField(this.fields.portNumber, '42200');
         I.fillField(this.fields.environment, 'remote-external-service');
